@@ -148,7 +148,7 @@ const Feed = () => {
 
   useEffect(() => {
     setLoading(true)
-    axios.get("http://localhost:3000/posts")
+    axios.get("http://localhost:3000/")
       .then((res) => {
         setPosts(res.data.posts)
         // Generate stable random vote counts
