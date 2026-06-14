@@ -85,6 +85,17 @@ html{
     margin: 20px 0;
 }
 
+.btn-home{
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
 @media (min-width: 780px) {
 
     .feed .posts{
@@ -102,3 +113,4 @@ html{
         width: 100vw;
     }
 }
+

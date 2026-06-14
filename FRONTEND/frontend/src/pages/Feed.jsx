@@ -1,7 +1,9 @@
 import React, { useState,useEffect } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const Feed = () => {
+  const navigate = useNavigate();
   
   const [post,setPost] = useState([]);
 
@@ -16,8 +18,14 @@ const Feed = () => {
   }, [])
 
   return (
+
     <section className='feed'>
         <h1>Feed</h1>
+        <input className='btn-home' type="button" value="Home" onClick={()=>{
+          navigate("/create-post")
+        }} />
+         
+
          <div className='posts'>
         {
           post.length > 0 ? (
