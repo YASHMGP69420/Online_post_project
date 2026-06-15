@@ -69,7 +69,7 @@ const CreatePost = () => {
       formData.append('image', imageFile)
     }
 
-    axios.post("http://localhost:3000/create-post", formData)
+    axios.post("/create-post", formData)
       .then(() => {
         navigate("/feed")
       })
