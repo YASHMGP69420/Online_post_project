@@ -148,7 +148,7 @@ const Feed = () => {
 
   useEffect(() => {
     setLoading(true)
-    axios.get("https://threadit-4vpv.onrender.com/")
+    axios.get("http://localhost:3000/")
       .then((res) => {
         setPosts(res.data.posts)
         // Generate stable random vote counts
